@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>健康管理ツール</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather&Health Memo</h1>
+        <div class="weather-box">
+            <div id="view"></div>
+        </div>
+        <div class="health-box">
+            <table>
+                <tr id="health">
+                    <th>今日の調子</th>
+                    <td>
+                        <select name="health">
+                        <option value="">選択してください</option>
+                        <option value="">最高🤗</option>
+                        <option value="">良い😊</option>
+                        <option value="">普通😃</option>
+                        <option value="">悪い😞</option>
+                        <option value="">最悪😨</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr id="body-temp">
+                    <th>体温</th>
+                    <td>
+                        <input type="text" placeholder="例: 36.5"> ℃
+                    </td>
+                </tr>
+                <tr id="pressure">
+                    <th>血圧</th>
+                    <td>
+                        <input type="text" name="upper" placeholder="例: 110"> / <br> <input type="text" name="lower" placeholder="例: 70"> mmHg
+                    </td>
+                </tr>
+                <tr id="condition1">
+                    <th>気になる症状１</th>
+                    <td>
+                        <input type="radio" name="condition1" value="なし" class="toggle-radio"> なし<br>
+                        <input type="radio" name="condition1" value="頭痛" class="toggle-radio"> 頭痛<br>
+                        <input type="radio" name="condition1" value="腹痛" class="toggle-radio"> 腹痛<br>
+                        <input type="radio" name="condition1" value="倦怠感" class="toggle-radio"> 倦怠感<br>
+                        <input type="radio" name="condition1" value="その他" class="toggle-radio"> その他<br>
+                    </td>
+                </tr>
+                <tr id="condition2">
+                    <th>気になる症状２</th>
+                    <td>
+                        <input type="radio" name="condition1" value="なし" class="toggle-radio"> なし<br>
+                        <input type="radio" name="condition2" value="頭痛" class="toggle-radio"> 頭痛<br>
+                        <input type="radio" name="condition2" value="腹痛" class="toggle-radio"> 腹痛<br>
+                        <input type="radio" name="condition2" value="倦怠感" class="toggle-radio"> 倦怠感<br>
+                        <input type="radio" name="condition2" value="その他" class="toggle-radio"> その他<br>
+                    </td>
+                </tr>
+                <tr id="free">
+                    <th>その他</th>
+                    <td>
+                        <textarea id="text" placeholder="その他の場合は必ず入力"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+
+    </div>
+    <div class="button-area">
+        <button id="save">Save</button>
+        <button id="clear">Clear</button>
+    </div>
+    
+    
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
